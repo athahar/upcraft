@@ -24,7 +24,7 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="text-3xl md:text-5xl font-display font-medium leading-tight mb-12"
           >
-            Great products aren't just designed. They are engineered through <span className="text-primary">rigorous strategy</span> and deep empathy.
+            Design for adoption, not just launch
           </motion.h2>
         </div>
 
