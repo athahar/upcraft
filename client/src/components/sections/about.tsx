@@ -1,19 +1,24 @@
 import { motion } from "framer-motion";
+import { DoorOpen, HelpCircle, Target, FlaskConical } from "lucide-react";
 
 const topics = [
   {
+    icon: DoorOpen,
     title: "Get out of the building",
     description: "Your users aren't in your Slack channels. We help you talk to real people, watch them struggle, hear what they're not saying, and understand the context you can't see from your desk."
   },
   {
+    icon: HelpCircle,
     title: "Question what you think you know",
     description: "The most dangerous phrase in product is \"we know our users.\" We help you pressure-test assumptions, challenge inherited wisdom, and separate what's true from what's just repeated."
   },
   {
+    icon: Target,
     title: "Find the problem worth solving",
     description: "Most teams are solving the wrong problem really well. We help you dig deeper—past the surface request to the underlying need, past the feature ask to the actual job to be done."
   },
   {
+    icon: FlaskConical,
     title: "Test what matters, not just what's easy",
     description: "Most MVPs test whether you can build something, not whether you should. We help you design experiments that validate the problem, the solution, and whether people will actually adopt it."
   }
@@ -65,8 +70,11 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 + (i * 0.1) }}
-              className="bg-card p-8 rounded-2xl border border-border/50 hover:border-accent/30 transition-colors"
+              className="bg-transparent p-8 rounded-2xl border border-border/50 hover:border-accent/30 transition-colors"
             >
+              <div className="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10">
+                <topic.icon className="w-6 h-6 text-accent" strokeWidth={1.5} />
+              </div>
               <h3 className="text-2xl font-display font-bold mb-4 text-foreground">{topic.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{topic.description}</p>
             </motion.div>
