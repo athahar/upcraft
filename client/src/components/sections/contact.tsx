@@ -11,7 +11,7 @@ export default function Contact() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="inline-block py-1 px-3 rounded-full bg-accent/5 text-accent text-xs font-bold uppercase tracking-widest mb-8 border border-accent/20"
+            className="inline-block py-1 px-3 rounded-full bg-secondary text-secondary-foreground text-xs font-bold uppercase tracking-widest mb-8 border border-border"
           >
             Get in Touch
           </motion.span>
