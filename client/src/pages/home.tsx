@@ -16,7 +16,7 @@ export default function Home() {
       <footer className="py-8 border-t border-border">
         <div className="container mx-auto px-6 flex justify-between items-center text-sm text-muted-foreground">
           <p>&copy; 2024 UpCraft Design.</p>
-          <p>Zurich • New York</p>
+          <p>San Francisco Bay Area</p>
         </div>
       </footer>
     </div>
