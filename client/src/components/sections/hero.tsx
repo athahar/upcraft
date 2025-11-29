@@ -53,7 +53,7 @@ export default function Hero() {
             className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6"
           >
             <a href="#contact" className="px-8 py-4 bg-primary text-primary-foreground rounded-full font-bold text-lg hover:bg-primary/90 transition-all hover:shadow-[0_0_30px_-5px_var(--color-primary)]">
-              Start a Project
+              Chat with us
             </a>
             <a href="#about" className="px-8 py-4 bg-secondary text-secondary-foreground rounded-full font-medium text-lg hover:bg-secondary/80 transition-colors border border-white/5">
               Our Philosophy
