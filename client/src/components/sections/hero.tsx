@@ -15,7 +15,6 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent" />
       </div>
-
       <div className="container mx-auto px-6 relative z-10 text-center">
         <div className="max-w-5xl mx-auto">
           <motion.div
@@ -41,10 +40,8 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
-          >
-            Tools got better. Building got faster. But building what's actually worth building is still hard. It requires getting out of your assumptions and into the reality of the people you're building for. For 15 years, we've helped teams do exactly that, building category defining products.
-          </motion.p>
+            className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-12 mt-8"
+          >Tools got better. Building got faster. But building what's actually worth building is still hard. It requires getting out of your assumptions and into the reality of the people you're building for. For 15 years, we've helped teams do exactly that, while building category-defining products.</motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -58,7 +55,6 @@ export default function Hero() {
           </motion.div>
         </div>
       </div>
-
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
