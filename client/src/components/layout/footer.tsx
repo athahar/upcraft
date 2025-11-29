@@ -28,7 +28,7 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col items-center md:items-end">
-            <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-4">The team behind this</p>
+            <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-4">The Team</p>
             <div className="flex gap-6">
               {people.map((person, i) => (
                 <a 
