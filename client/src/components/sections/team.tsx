@@ -11,7 +11,7 @@ const people = [
   },
   {
     name: "Athahar",
-    role: "Strategy",
+    role: "Product",
     linkedin: "https://www.linkedin.com/in/athahar/",
     image: athaharImage
   }
