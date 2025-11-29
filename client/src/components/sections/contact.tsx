@@ -3,60 +3,60 @@ import { Mail, MessageCircle, ArrowRight } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-32 bg-secondary/30">
-      <div className="container mx-auto px-6">
-        <div className="max-w-4xl">
+    <section id="contact" className="py-32 bg-secondary/20 relative">
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
+      
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="max-w-4xl mx-auto text-center">
           <motion.span 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="text-sm font-mono uppercase tracking-widest text-muted-foreground block mb-8"
+            className="inline-block py-1 px-3 rounded-full bg-secondary text-primary text-xs font-bold uppercase tracking-widest mb-8 border border-white/5"
           >
-            02 — Get in Touch
+            Get in Touch
           </motion.span>
 
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-5xl md:text-7xl font-display font-bold tracking-tighter mb-16"
+            className="text-5xl md:text-7xl font-display font-bold tracking-tighter mb-16 text-white"
           >
-            Let's build something<br />remarkable.
+            Let's build something<br /><span className="text-primary">remarkable.</span>
           </motion.h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
             <motion.a 
               href="mailto:hello@upcraft.design"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="group flex flex-col p-8 bg-card border border-border hover:border-primary/20 transition-colors h-full justify-between min-h-[240px]"
+              className="group flex items-center p-6 rounded-2xl bg-card border border-white/5 hover:border-primary/50 transition-all hover:shadow-[0_0_20px_-10px_var(--color-primary)]"
             >
-              <div className="flex justify-between items-start">
-                <Mail className="w-8 h-8 text-primary" />
-                <ArrowRight className="w-6 h-6 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
+              <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mr-6 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                <Mail className="w-6 h-6" />
               </div>
-              <div>
-                <h3 className="text-xl font-medium mb-2">Email Us</h3>
-                <p className="text-muted-foreground mb-4">For project inquiries and collaborations.</p>
-                <span className="text-lg underline decoration-1 underline-offset-4">hello@upcraft.design</span>
+              <div className="text-left flex-1">
+                <h3 className="text-lg font-bold text-white">Email Us</h3>
+                <p className="text-muted-foreground text-sm">hello@upcraft.design</p>
               </div>
+              <ArrowRight className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" />
             </motion.a>
 
             <motion.a 
               href="https://wa.me/1234567890"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="group flex flex-col p-8 bg-primary text-primary-foreground h-full justify-between min-h-[240px]"
+              className="group flex items-center p-6 rounded-2xl bg-card border border-white/5 hover:border-primary/50 transition-all hover:shadow-[0_0_20px_-10px_var(--color-primary)]"
             >
-              <div className="flex justify-between items-start">
-                <MessageCircle className="w-8 h-8" />
-                <ArrowRight className="w-6 h-6 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
+              <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mr-6 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                <MessageCircle className="w-6 h-6" />
               </div>
-              <div>
-                <h3 className="text-xl font-medium mb-2">Chat Now</h3>
-                <p className="text-primary-foreground/70 mb-4">Quick questions? Text us on WhatsApp.</p>
-                <span className="text-lg underline decoration-1 underline-offset-4">Start a conversation</span>
+              <div className="text-left flex-1">
+                <h3 className="text-lg font-bold text-white">Chat Now</h3>
+                <p className="text-muted-foreground text-sm">WhatsApp / Telegram</p>
               </div>
+              <ArrowRight className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" />
             </motion.a>
           </div>
         </div>
