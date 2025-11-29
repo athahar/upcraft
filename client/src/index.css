@@ -24,8 +24,8 @@
   --color-input: hsl(var(--input));
   --color-ring: hsl(var(--ring));
   
-  --font-sans: 'Manrope', sans-serif;
-  --font-display: 'Space Grotesk', sans-serif;
+  --font-sans: 'Source Sans 3', sans-serif;
+  --font-display: 'Be Vietnam Pro', sans-serif;
   
   --radius-sm: 0.5rem;
   --radius-md: 0.75rem;
