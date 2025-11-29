@@ -37,7 +37,7 @@ export default function Contact() {
               </div>
               <div className="text-left flex-1">
                 <h3 className="text-lg font-bold text-foreground">Email Us</h3>
-                <p className="text-muted-foreground text-sm">hello@upcraft.design</p>
+                <p className="text-muted-foreground text-sm">hello@upcraft.xyz</p>
               </div>
               <ArrowRight className="w-5 h-5 text-accent group-hover:translate-x-1 transition-transform" />
             </motion.a>
