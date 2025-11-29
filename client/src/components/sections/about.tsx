@@ -24,7 +24,7 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="text-5xl md:text-7xl font-display font-bold tracking-tighter mb-16 text-foreground"
           >
-            Design for adoption,<br />not just launch.
+            Design for <span className="text-accent">adoption</span>,<br />not just launch.
           </motion.h2>
           
           <motion.p 
