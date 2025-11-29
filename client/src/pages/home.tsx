@@ -3,6 +3,7 @@ import Hero from "@/components/sections/hero";
 import TrustedBy from "@/components/sections/trusted-by";
 import About from "@/components/sections/about";
 import Contact from "@/components/sections/contact";
+import Footer from "@/components/layout/footer";
 
 export default function Home() {
   return (
@@ -15,12 +16,7 @@ export default function Home() {
         <Contact />
       </main>
       
-      <footer className="py-8 border-t border-border">
-        <div className="container mx-auto px-6 flex justify-between items-center text-sm text-muted-foreground">
-          <p>&copy; 2025 UpCraft LLC</p>
-          <p>San Francisco Bay Area</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
