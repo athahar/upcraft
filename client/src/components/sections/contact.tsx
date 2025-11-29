@@ -32,7 +32,7 @@ export default function Contact() {
               whileTap={{ scale: 0.98 }}
               className="group flex items-center p-6 rounded-2xl bg-transparent border border-border hover:border-accent/50 transition-all hover:shadow-[0_0_20px_-10px_var(--color-accent)]"
             >
-              <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mr-6 group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
+              <div className="w-12 h-12 bg-transparent rounded-full flex items-center justify-center mr-6 group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
                 <Mail className="w-6 h-6 text-secondary-foreground group-hover:text-accent-foreground" />
               </div>
               <div className="text-left flex-1">
@@ -48,7 +48,7 @@ export default function Contact() {
               whileTap={{ scale: 0.98 }}
               className="group flex items-center p-6 rounded-2xl bg-transparent border border-border hover:border-accent/50 transition-all hover:shadow-[0_0_20px_-10px_var(--color-accent)]"
             >
-              <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mr-6 group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
+              <div className="w-12 h-12 bg-transparent rounded-full flex items-center justify-center mr-6 group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
                 <MessageCircle className="w-6 h-6 text-secondary-foreground group-hover:text-accent-foreground" />
               </div>
               <div className="text-left flex-1">
