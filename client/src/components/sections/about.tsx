@@ -24,7 +24,6 @@ export default function About() {
     <section id="about" className="py-32 bg-background relative overflow-hidden">
       {/* Subtle grid background */}
       <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-5 mix-blend-overlay"></div>
-      
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center mb-24">
           <motion.span 
@@ -52,9 +51,7 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
-          >
-            Earning trust, changing behavior, and driving real adoption takes understanding how people actually work, what they actually need, and what will actually fit into their lives. We help dig past the surface request and feature asks to uncover underlying need and actual job to be done.
-          </motion.p>
+          >Earning trust, changing behavior, and driving real adoption takes understanding how people actually work, what they actually need, and what will actually fit into their lives.</motion.p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 lg:gap-12 max-w-6xl mx-auto">
