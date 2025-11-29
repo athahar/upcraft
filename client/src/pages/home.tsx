@@ -1,5 +1,6 @@
 import Navbar from "@/components/layout/navbar";
 import Hero from "@/components/sections/hero";
+import TrustedBy from "@/components/sections/trusted-by";
 import About from "@/components/sections/about";
 import Contact from "@/components/sections/contact";
 
@@ -9,6 +10,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <TrustedBy />
         <About />
         <Contact />
       </main>
