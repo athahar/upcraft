@@ -52,7 +52,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6"
           >
-            <a href="#contact" className="px-8 py-4 bg-primary text-primary-foreground rounded-full font-bold text-lg hover:bg-primary/90 transition-all hover:shadow-[0_0_30px_-5px_var(--color-primary)]">
+            <a href="#contact" className="px-8 py-4 bg-accent text-accent-foreground rounded-full font-bold text-lg hover:bg-accent/90 transition-all hover:shadow-[0_0_30px_-5px_var(--color-accent)]">
               Chat with us
             </a>
           </motion.div>

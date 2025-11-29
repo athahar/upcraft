@@ -52,7 +52,7 @@
   --muted: 60 20% 88%;       /* Slightly darker beige */
   --muted-foreground: 0 0% 40%;
 
-  --accent: 10 90% 65%;      /* #F76F53 - Orange Accent */
+  --accent: 176 44% 38%;     /* #378c87 - Teal Accent */
   --accent-foreground: 60 30% 94%;
 
   --destructive: 0 84% 60%;
@@ -60,7 +60,7 @@
 
   --border: 0 0% 85%;
   --input: 0 0% 85%;
-  --ring: 10 90% 65%;
+  --ring: 176 44% 38%;
 
   --radius: 0.5rem;
 }
