@@ -6,9 +6,8 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
         <Link href="/">
-          <a className="text-2xl font-display font-bold tracking-tighter hover:text-primary transition-colors flex items-center gap-2">
-            <div className="w-3 h-3 bg-primary rounded-full"></div>
-            UpCraft
+          <a className="text-3xl font-bold tracking-tight hover:text-primary transition-colors flex items-center gap-2" style={{ fontFamily: "'Space Grotesque', sans-serif" }}>
+            upcraft
           </a>
         </Link>
         
