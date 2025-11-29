@@ -23,8 +23,8 @@ const brandLogos = [
   },
   { 
     name: "GoDaddy", 
-    url: "https://upload.wikimedia.org/wikipedia/commons/1/1d/GoDaddy_logo.svg",
-    className: "h-8 md:h-10" // Increased height for better visibility of text
+    url: "https://cdn.worldvectorlogo.com/logos/godaddy-1.svg",
+    className: "h-6 md:h-8" 
   }
 ];
 
