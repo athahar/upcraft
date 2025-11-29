@@ -27,7 +27,7 @@ export default function Contact() {
 
           <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
             <motion.a 
-              href="mailto:hello@upcraft.design"
+              href="mailto:hello@upcraft.xyz"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="group flex items-center p-6 rounded-2xl bg-card border border-border hover:border-accent/50 transition-all hover:shadow-[0_0_20px_-10px_var(--color-accent)]"
