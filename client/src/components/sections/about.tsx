@@ -1,12 +1,7 @@
 import { motion } from "framer-motion";
-import { DoorOpen, HelpCircle, Target, FlaskConical } from "lucide-react";
+import { HelpCircle, Target, FlaskConical } from "lucide-react";
 
 const topics = [
-  {
-    icon: DoorOpen,
-    title: "Get out of the building",
-    description: "Your users aren't in your Slack channels. We help you talk to real people, watch them struggle, hear what they're not saying, and understand the context you can't see from your desk."
-  },
   {
     icon: HelpCircle,
     title: "Question what you think you know",
