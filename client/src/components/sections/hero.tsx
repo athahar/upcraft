@@ -25,7 +25,7 @@ export default function Hero() {
             className="mb-8 inline-flex items-center justify-center px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-medium backdrop-blur-sm"
           >
             <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse"></span>
-            Strategic UX & Product Design
+            Strategic Product & UX Design
           </motion.div>
 
           <motion.h1 
