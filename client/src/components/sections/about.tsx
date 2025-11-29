@@ -31,10 +31,6 @@ export default function About() {
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
-              title: "Discovery",
-              desc: "We don't assume. We investigate. Through user interviews and data analysis, we uncover the real problems worth solving."
-            },
-            {
               title: "Strategy",
               desc: "We bridge business goals with user needs. We define the product vision, roadmap, and metrics for success."
             },
