@@ -34,7 +34,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
             className="text-5xl md:text-8xl font-display font-bold leading-[1.1] tracking-tight mb-10 text-foreground"
           >
-            Building fast is easy now. Building right is still hard.
+            Don't just build fast. Build it for use.
           </motion.h1>
           
           <motion.p 
