@@ -33,7 +33,7 @@ export default function Contact() {
               </a>
             </div>
             <div className="text-center">
-              <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground mb-2">SEND A TEXT</p>
+              <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground mb-2">TEXT</p>
               <a href="tel:+14089406685" className="text-xl md:text-2xl font-display text-foreground hover:text-accent transition-colors">+1 (408) 940-6685</a>
             </div>
           </div>
