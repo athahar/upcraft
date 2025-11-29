@@ -41,7 +41,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-12 mt-8"
-          >Tools got better. Building got faster. But building what's actually worth building is still hard. It requires getting out of assumptions and into the reality of the people you're building for. For 15 years, we've helped teams do exactly that, with category-defining products.</motion.p>
+          >Tools got better. Building got faster. But building what's actually worth building is still hard. It requires getting out of assumptions and into the reality of the people you're building for. For 15 years, we've helped teams do exactly that, creating category-defining products.</motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
