@@ -1,6 +1,6 @@
 import { Linkedin } from "lucide-react";
 import mashaalImage from "@assets/image_1764408669428.png";
-import athaharImage from "@assets/generated_images/professional_headshot_of_a_man.png";
+import athaharImage from "@assets/image_1764408716381.png";
 
 const people = [
   {
