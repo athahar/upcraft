@@ -1,34 +1,5 @@
 import { motion } from "framer-motion";
 
-// SVG Wordmark URLs based on search results
-const brands = [
-  { 
-    name: "Google", 
-    url: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
-  },
-  { 
-    name: "PayPal", 
-    url: "https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
-  },
-  { 
-    name: "Visa", 
-    url: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
-  },
-  { 
-    name: "LinkedIn", 
-    url: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" // Placeholder, will replace below
-  },
-  { 
-    name: "GoDaddy", 
-    url: "https://upload.wikimedia.org/wikipedia/commons/1/1d/GoDaddy_logo.svg"
-  },
-  { 
-    name: "BCG", 
-    url: "https://upload.wikimedia.org/wikipedia/commons/f/f8/Boston_Consulting_Group_2020_logo.svg"
-  }
-];
-
-// Correcting LinkedIn URL and ensuring all are valid wordmarks
 const brandLogos = [
   { 
     name: "Google", 
@@ -53,12 +24,7 @@ const brandLogos = [
   { 
     name: "GoDaddy", 
     url: "https://upload.wikimedia.org/wikipedia/commons/1/1d/GoDaddy_logo.svg",
-    className: "h-6 md:h-8"
-  },
-  { 
-    name: "BCG", 
-    url: "https://upload.wikimedia.org/wikipedia/commons/f/f8/Boston_Consulting_Group_2020_logo.svg",
-    className: "h-4 md:h-6"
+    className: "h-8 md:h-10" // Increased height for better visibility of text
   }
 ];
 
