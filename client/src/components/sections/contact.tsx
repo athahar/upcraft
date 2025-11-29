@@ -25,38 +25,19 @@ export default function Contact() {
             Let's build something<br /><span className="text-[#378c87]">remarkable.</span>
           </motion.h2>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            <motion.a 
-              href="mailto:hello@upcraft.xyz"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="group flex items-center p-6 rounded-2xl bg-transparent border border-border hover:border-accent/50 transition-all hover:shadow-[0_0_20px_-10px_var(--color-accent)]"
-            >
-              <div className="w-12 h-12 bg-transparent rounded-full flex items-center justify-center mr-6 group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
-                <Mail className="w-6 h-6 text-secondary-foreground group-hover:text-accent-foreground" />
-              </div>
-              <div className="text-left flex-1">
-                <h3 className="text-lg font-bold text-foreground">Email Us</h3>
-                <p className="text-muted-foreground text-sm">hello@upcraft.xyz</p>
-              </div>
-              <ArrowRight className="w-5 h-5 text-accent group-hover:translate-x-1 transition-transform" />
-            </motion.a>
-
-            <motion.a 
-              href="https://wa.me/14085076911"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="group flex items-center p-6 rounded-2xl bg-transparent border border-border hover:border-accent/50 transition-all hover:shadow-[0_0_20px_-10px_var(--color-accent)]"
-            >
-              <div className="w-12 h-12 bg-transparent rounded-full flex items-center justify-center mr-6 group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
-                <MessageCircle className="w-6 h-6 text-secondary-foreground group-hover:text-accent-foreground" />
-              </div>
-              <div className="text-left flex-1">
-                <h3 className="text-lg font-bold text-foreground">Chat Now</h3>
-                <p className="text-muted-foreground text-sm">WhatsApp / SMS</p>
-              </div>
-              <ArrowRight className="w-5 h-5 text-accent group-hover:translate-x-1 transition-transform" />
-            </motion.a>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 mt-8">
+            <div className="text-center">
+              <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground mb-2">Email</p>
+              <a href="mailto:hello@upcraft.xyz" className="text-xl md:text-2xl font-display text-foreground hover:text-accent transition-colors">
+                hello@upcraft.xyz
+              </a>
+            </div>
+            <div className="text-center">
+              <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground mb-2">Phone</p>
+              <a href="tel:+14089406685" className="text-xl md:text-2xl font-display text-foreground hover:text-accent transition-colors">
+                408 940-6685
+              </a>
+            </div>
           </div>
         </div>
       </div>
