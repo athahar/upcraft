@@ -49,7 +49,6 @@ export default function Footer() {
                   <div className="text-left">
                     <div className="flex items-center gap-1.5">
                       <span className="text-sm font-medium text-foreground group-hover:text-accent transition-colors">{person.name}</span>
-                      <Linkedin className="w-3 h-3 text-[#0077b5]" />
                     </div>
                   </div>
                 </a>
