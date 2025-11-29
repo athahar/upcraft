@@ -33,7 +33,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="text-xl md:text-2xl text-muted-foreground max-w-2xl leading-relaxed"
           >
-            We are a strategic design consultancy helping visionary leaders build digital products with purpose and precision.
+            Tools got better. Building got faster. But understanding what's actually worth building—that's still hard. That still requires getting out of your assumptions and into the reality of the people you're building for. For 15 years, we've helped teams do exactly that.
           </motion.p>
         </div>
       </div>
