@@ -7,7 +7,7 @@ export default function Navbar() {
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
         <Link href="/">
           <a className="text-2xl font-display font-bold tracking-tighter hover:opacity-70 transition-opacity">
-            STRATA
+            UpCraft
           </a>
         </Link>
         

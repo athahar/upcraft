@@ -26,7 +26,7 @@ export default function Contact() {
 
           <div className="grid md:grid-cols-2 gap-8">
             <motion.a 
-              href="mailto:hello@strata.design"
+              href="mailto:hello@upcraft.design"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="group flex flex-col p-8 bg-card border border-border hover:border-primary/20 transition-colors h-full justify-between min-h-[240px]"
@@ -38,7 +38,7 @@ export default function Contact() {
               <div>
                 <h3 className="text-xl font-medium mb-2">Email Us</h3>
                 <p className="text-muted-foreground mb-4">For project inquiries and collaborations.</p>
-                <span className="text-lg underline decoration-1 underline-offset-4">hello@strata.design</span>
+                <span className="text-lg underline decoration-1 underline-offset-4">hello@upcraft.design</span>
               </div>
             </motion.a>
 
