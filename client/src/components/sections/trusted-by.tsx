@@ -22,8 +22,8 @@ const brandLogos = [
     className: "h-6 md:h-8"
   },
   { 
-    name: "GoDaddy", 
-    url: "https://cdn.worldvectorlogo.com/logos/godaddy-1.svg",
+    name: "Square", 
+    url: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Square%2C_Inc._logo.svg",
     className: "h-6 md:h-8" 
   }
 ];
