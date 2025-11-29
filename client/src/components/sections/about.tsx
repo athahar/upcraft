@@ -15,7 +15,7 @@ const topics = [
   {
     icon: FlaskConical,
     title: "Build what matters, not just what's easy",
-    description: "Most MVPs and early stage products test what's quick to build. We help you design 0→1 products that validate whether people will actually adopt it, in the leanest way possible."
+    description: "Most MVPs and early stage products test what's quick to build. We help you design 0 →1 products, validated based on whether people will actually adopt it, in the leanest way possible."
   }
 ];
 
