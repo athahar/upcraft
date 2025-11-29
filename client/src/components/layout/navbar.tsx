@@ -13,9 +13,6 @@ export default function Navbar() {
         </Link>
         
         <div className="flex items-center gap-8">
-          <a href="#about" className="hidden md:block text-sm font-medium hover:text-primary transition-colors">
-            Philosophy
-          </a>
           <a href="#contact" className="text-sm font-bold bg-primary/10 text-primary border border-primary/20 px-5 py-2.5 rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300">
             Get in touch
           </a>
