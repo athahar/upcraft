@@ -34,7 +34,7 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
           >
-            Earning trust, changing behavior, and driving real adoption takes understanding how people actually work, what they actually need, and what will actually fit into their lives. Most teams are solving the wrong problem really well. We help you dig deeper—past the surface request to the underlying need, past the feature ask to the actual job to be done.
+            Earning trust, changing behavior, and driving real adoption takes understanding how people actually work, what they actually need, and what will actually fit into their lives. We help dig past the surface request and feature asks to uncover underlying need and actual job to be done.
           </motion.p>
         </div>
 
