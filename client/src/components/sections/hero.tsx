@@ -32,10 +32,9 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-            className="text-5xl md:text-8xl font-display font-bold leading-[1.1] tracking-tight mb-10 text-white"
+            className="text-5xl md:text-8xl font-display font-bold leading-[1.1] tracking-tight mb-10 text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/50"
           >
-            Building fast is easy now.<br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/50">Building right is still hard.</span>
+            Building fast is easy now. Building right is still hard.
           </motion.h1>
           
           <motion.p 
