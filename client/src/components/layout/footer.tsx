@@ -21,13 +21,12 @@ export default function Footer() {
   return (
     <footer className="py-12 border-t border-border bg-muted/10">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="text-sm text-muted-foreground text-center md:text-left">
-            <p className="mb-1">&copy; 2025 UpCraft LLC</p>
-            <p>San Francisco Bay Area</p>
+        <div className="grid md:grid-cols-3 gap-8 items-center">
+          <div className="text-sm text-muted-foreground text-center md:text-left order-3 md:order-1">
+            <p>&copy; 2025 UpCraft LLC</p>
           </div>
 
-          <div className="flex flex-col items-center md:items-end">
+          <div className="flex flex-col items-center order-1 md:order-2">
             <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-4">The Team</p>
             <div className="flex gap-6">
               {people.map((person, i) => (
@@ -54,6 +53,10 @@ export default function Footer() {
                 </a>
               ))}
             </div>
+          </div>
+
+          <div className="text-sm text-muted-foreground text-center md:text-right order-2 md:order-3">
+            <p>San Francisco Bay Area</p>
           </div>
         </div>
       </div>
