@@ -33,24 +33,24 @@
 }
 
 :root {
-  /* Zen Browser / Branding JSON Palette (Light) */
-  --background: 220 13% 91%; /* #E5E7EB - Light Grey */
+  /* Zen Browser / Branding JSON Palette (Beige Theme) */
+  --background: 60 30% 94%;  /* #F2F0E3 - Beige/Cream */
   --foreground: 0 0% 18%;    /* #2E2E2E - Dark Grey */
 
-  --card: 0 0% 100%;
+  --card: 0 0% 100%;         /* White cards */
   --card-foreground: 0 0% 18%;
 
   --popover: 0 0% 100%;
   --popover-foreground: 0 0% 18%;
 
-  --primary: 60 30% 94%;     /* #F2F0E3 - Cream/Off-white */
-  --primary-foreground: 0 0% 18%; /* Dark text on cream button */
+  --primary: 0 0% 18%;       /* #2E2E2E - Dark Grey (Contrast against beige) */
+  --primary-foreground: 60 30% 94%; /* Beige text on dark button */
 
-  --secondary: 0 0% 18%;     /* #2E2E2E - Dark Button */
-  --secondary-foreground: 60 30% 94%; /* Light text on dark button */
+  --secondary: 0 0% 100%;    /* White for secondary elements */
+  --secondary-foreground: 0 0% 18%;
 
-  --muted: 220 13% 85%;
-  --muted-foreground: 220 13% 40%;
+  --muted: 60 20% 88%;       /* Slightly darker beige */
+  --muted-foreground: 0 0% 40%;
 
   --accent: 10 90% 65%;      /* #F76F53 - Orange Accent */
   --accent-foreground: 60 30% 94%;
@@ -58,8 +58,8 @@
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
 
-  --border: 220 13% 80%;
-  --input: 220 13% 80%;
+  --border: 0 0% 85%;
+  --input: 0 0% 85%;
   --ring: 10 90% 65%;
 
   --radius: 0.5rem;
