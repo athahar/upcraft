@@ -23,8 +23,8 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-6xl md:text-8xl font-display font-bold leading-[0.9] tracking-tighter mb-8"
           >
-            Clarifying<br />
-            Complexity.
+            Building fast is easy now.<br />
+            Building right is still hard.
           </motion.h1>
           
           <motion.p 
