@@ -14,7 +14,7 @@ const topics = [
   },
   {
     icon: FlaskConical,
-    title: "Build what matters",
+    title: "Test what matters, not just what's easy",
     description: "Most MVPs test whether you can build something, not whether you should. We help you design experiments that validate the problem, the solution, and whether people will actually adopt it."
   }
 ];
