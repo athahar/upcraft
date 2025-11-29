@@ -1,17 +1,19 @@
 import { Linkedin } from "lucide-react";
+import mashaalImage from "@assets/generated_images/professional_headshot_of_a_woman.png";
+import athaharImage from "@assets/generated_images/professional_headshot_of_a_man.png";
 
 const people = [
   {
-    name: "Founder Name",
-    role: "Role",
-    linkedin: "https://linkedin.com",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=1" 
+    name: "Mashaal",
+    role: "Design",
+    linkedin: "http://linkedin.com/in/mashaal",
+    image: mashaalImage
   },
   {
-    name: "Co-founder Name",
-    role: "Role",
-    linkedin: "https://linkedin.com",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=2"
+    name: "Athahar",
+    role: "Strategy",
+    linkedin: "https://www.linkedin.com/in/athahar/",
+    image: athaharImage
   }
 ];
 
