@@ -1,5 +1,24 @@
 import { motion } from "framer-motion";
 
+const topics = [
+  {
+    title: "Get out of the building",
+    description: "Your users aren't in your Slack channels. We help you talk to real people, watch them struggle, hear what they're not saying, and understand the context you can't see from your desk."
+  },
+  {
+    title: "Question what you think you know",
+    description: "The most dangerous phrase in product is \"we know our users.\" We help you pressure-test assumptions, challenge inherited wisdom, and separate what's true from what's just repeated."
+  },
+  {
+    title: "Find the problem worth solving",
+    description: "Most teams are solving the wrong problem really well. We help you dig deeper—past the surface request to the underlying need, past the feature ask to the actual job to be done."
+  },
+  {
+    title: "Test what matters, not just what's easy",
+    description: "Most MVPs test whether you can build something, not whether you should. We help you design experiments that validate the problem, the solution, and whether people will actually adopt it."
+  }
+];
+
 export default function About() {
   return (
     <section id="about" className="py-32 bg-background relative overflow-hidden">
@@ -36,6 +55,22 @@ export default function About() {
           >
             Earning trust, changing behavior, and driving real adoption takes understanding how people actually work, what they actually need, and what will actually fit into their lives. We help dig past the surface request and feature asks to uncover underlying need and actual job to be done.
           </motion.p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6 lg:gap-12 max-w-6xl mx-auto">
+          {topics.map((topic, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 + (i * 0.1) }}
+              className="bg-card p-8 rounded-2xl border border-border/50 hover:border-accent/30 transition-colors"
+            >
+              <h3 className="text-2xl font-display font-bold mb-4 text-foreground">{topic.title}</h3>
+              <p className="text-muted-foreground leading-relaxed">{topic.description}</p>
+            </motion.div>
+          ))}
         </div>
 
       </div>
