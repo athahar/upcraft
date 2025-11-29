@@ -12,7 +12,7 @@ export default function About() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="inline-block py-1 px-3 rounded-full bg-secondary text-primary text-xs font-bold uppercase tracking-widest mb-8 border border-white/5"
+            className="inline-block py-1 px-3 rounded-full bg-secondary text-secondary-foreground text-xs font-bold uppercase tracking-widest mb-8 border border-border"
           >
             The Approach
           </motion.span>
@@ -22,7 +22,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-5xl md:text-7xl font-display font-bold tracking-tighter mb-16 text-white"
+            className="text-5xl md:text-7xl font-display font-bold tracking-tighter mb-16 text-foreground"
           >
             Design for adoption, not just launch
           </motion.h2>

@@ -66,7 +66,7 @@ const brands = [
 
 export default function TrustedBy() {
   return (
-    <section className="py-12 border-y border-white/5 bg-black/20 backdrop-blur-sm">
+    <section className="py-12 border-y border-border bg-background/50 backdrop-blur-sm">
       <div className="container mx-auto px-6">
         <p className="text-center text-sm font-medium text-muted-foreground mb-8 uppercase tracking-widest">
           Trusted by founders previously at

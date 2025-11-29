@@ -22,9 +22,9 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="mb-8 inline-flex items-center justify-center px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-medium backdrop-blur-sm"
+            className="mb-8 inline-flex items-center justify-center px-4 py-1.5 rounded-full border border-accent/20 bg-accent/5 text-accent text-sm font-medium backdrop-blur-sm"
           >
-            <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse"></span>
+            <span className="flex h-2 w-2 rounded-full bg-accent mr-2 animate-pulse"></span>
             Strategic Product & UX Design
           </motion.div>
 
@@ -32,7 +32,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-            className="text-5xl md:text-8xl font-display font-bold leading-[1.1] tracking-tight mb-10 text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/50"
+            className="text-5xl md:text-8xl font-display font-bold leading-[1.1] tracking-tight mb-10 text-foreground"
           >
             Building fast is easy now. Building right is still hard.
           </motion.h1>

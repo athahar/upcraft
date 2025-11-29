@@ -1,0 +1,106 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Bricolage Grotesque",
+      "role": "body"
+    },
+    {
+      "family": "Junicode",
+      "role": "body"
+    }
+  ],
+  "colors": {
+    "primary": "#F2F0E3",
+    "accent": "#F76F53",
+    "background": "#E5E7EB",
+    "textPrimary": "#2E2E2E",
+    "link": "#F76F53"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Bricolage Grotesque",
+      "heading": "Bricolage Grotesque"
+    },
+    "fontStacks": {
+      "heading": [
+        "Junicode",
+        "serif"
+      ],
+      "body": [
+        "bricolage-grotesque"
+      ],
+      "paragraph": [
+        "Bricolage Grotesque",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "128px",
+      "h2": "60px",
+      "body": "16px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "8px"
+  },
+  "components": {
+    "input": {
+      "borderColor": "#CCCCCC",
+      "borderRadius": "8px"
+    },
+    "buttonPrimary": {
+      "background": "#F2F0E3",
+      "textColor": "#2E2E2E",
+      "borderRadius": "12px",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px"
+    },
+    "buttonSecondary": {
+      "background": "#2E2E2E",
+      "textColor": "#F2F0E3",
+      "borderRadius": "12px",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px"
+    }
+  },
+  "images": {
+    "logo": "File saved at: attached_assets/logo.svg",
+    "favicon": "File saved at: attached_assets/favicon.svg",
+    "ogImage": null
+  },
+  "__framework_hints": [
+    "Astro v5.15.6"
+  ],
+  "__llm_logo_reasoning": {
+    "selectedIndex": 0,
+    "reasoning": "Logo #0 is the only one that visually represents the brand name 'Zen Browser' and is located in the header, linking to the homepage, making it the most suitable choice.",
+    "confidence": 0.9
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 6,
+      "text": "Download",
+      "reasoning": "Button #6 ('Download') has a vibrant background color (#F2F0E3) that stands out as the primary call-to-action. It is action-oriented and encourages users to take a specific action, making it the primary CTA."
+    },
+    "secondary": {
+      "index": 3,
+      "text": "Beta is now available!",
+      "reasoning": "Button #3 ('Beta is now available!') has a different background color (#2E2E2E) from the primary button, making it suitable as the secondary CTA. It is less prominent and serves as a supportive action."
+    },
+    "confidence": 0.95
+  },
+  "personality": {
+    "tone": "modern",
+    "energy": "medium",
+    "targetAudience": "tech-savvy users looking for a new browser experience."
+  },
+  "designSystem": {
+    "framework": "tailwind",
+    "componentLibrary": null
+  },
+  "confidence": {
+    "buttons": 0.95,
+    "colors": 0.9,
+    "overall": 0.925
+  }
+}
