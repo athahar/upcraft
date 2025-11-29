@@ -11,7 +11,7 @@ const people = [
   },
   {
     name: "Athahar",
-    role: "Strategy",
+    role: "Product",
     linkedin: "https://www.linkedin.com/in/athahar/",
     image: athaharImage
   }
@@ -38,7 +38,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="group flex items-center gap-3 hover:opacity-80 transition-opacity"
                 >
-                  <div className="w-8 h-8 rounded-full bg-accent/10 overflow-hidden border border-border group-hover:border-accent transition-colors">
+                  <div className="w-10 h-10 rounded-full bg-accent/10 overflow-hidden border border-border group-hover:border-accent transition-colors">
                      {/* Using a placeholder pattern or initial if image fails, but here using a gradient div as fallback or just the image */}
                      <img 
                         src={person.image} 
@@ -47,8 +47,9 @@ export default function Footer() {
                      />
                   </div>
                   <div className="text-left">
-                    <div className="flex items-center gap-1.5">
-                      <span className="text-sm font-medium text-foreground group-hover:text-accent transition-colors">{person.name}</span>
+                    <div className="flex flex-col">
+                      <span className="text-sm font-medium text-foreground group-hover:text-accent transition-colors leading-none mb-1">{person.name}</span>
+                      <span className="text-[10px] uppercase tracking-wider text-muted-foreground group-hover:text-foreground/70 transition-colors">{person.role}</span>
                     </div>
                   </div>
                 </a>
