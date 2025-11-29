@@ -22,7 +22,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-5xl md:text-7xl font-display font-bold tracking-tighter mb-16 text-foreground"
+            className="text-5xl md:text-7xl font-display font-bold tracking-tighter mb-16 text-foreground max-w-[11em] mx-auto"
           >
             Design for adoption, not just launch.
           </motion.h2>
