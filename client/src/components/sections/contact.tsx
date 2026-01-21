@@ -32,7 +32,7 @@ export default function Contact() {
             transition={{ delay: 0.1 }}
             className="text-xl text-muted-foreground max-w-2xl mx-auto mb-16"
           >
-            We'd love to hear what you're facing and explore how to help.
+            We'd love to hear about your project, and explore how to help.
           </motion.p>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 mt-8">
