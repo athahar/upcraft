@@ -5,7 +5,7 @@ const topics = [
   {
     icon: HelpCircle,
     title: "Question what you think you know",
-    description: "The most dangerous phrase in product is \"we know our users.\" We help you pressure-test assumptions, challenge inherited wisdom, hear what people are not saying, and understand their context."
+    description: "We help you pressure-test assumptions, and hear what people are not saying, and uncover real context."
   },
   {
     icon: Target,
