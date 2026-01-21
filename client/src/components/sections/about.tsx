@@ -10,7 +10,7 @@ const topics = [
   {
     icon: Target,
     title: "Find the problem worth solving",
-    description: "Most teams are solving the wrong problem really well. We help you dig deeper—past the surface request to the underlying need, past the feature ask to the actual job to be done."
+    description: "We help you dig deep — past the feature ask to the underlying customer need, to the actual job-to-be-done."
   },
   {
     icon: FlaskConical,
