@@ -23,7 +23,6 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="mb-8 inline-flex items-center justify-center px-4 py-1.5 rounded-full border border-accent/20 bg-accent/5 text-accent text-sm font-medium backdrop-blur-sm"
           >
-            <span className="flex h-2 w-2 rounded-full bg-accent mr-2 animate-pulse"></span>
             Strategic Product & UX Design
           </motion.div>
 
