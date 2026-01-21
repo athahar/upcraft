@@ -21,7 +21,7 @@ const topics = [
 
 export default function About() {
   return (
-    <section id="about" className="py-32 bg-background relative overflow-hidden">
+    <section id="about" className="py-20 md:py-32 bg-background relative overflow-hidden">
       {/* Subtle grid background */}
       <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-5 mix-blend-overlay"></div>
       <div className="container mx-auto px-6 relative z-10">
