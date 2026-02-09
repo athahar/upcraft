@@ -1,14 +1,7 @@
-import { motion } from "framer-motion";
-
 export default function Privacy() {
   return (
     <div className="min-h-screen bg-background text-foreground py-20 px-6">
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="max-w-3xl mx-auto prose prose-neutral prose-lg pt-12"
-      >
+      <div className="max-w-3xl mx-auto pt-12">
         <h1 className="text-4xl font-display font-bold mb-8">Privacy Policy</h1>
         
         <div className="mb-8">
@@ -91,7 +84,7 @@ export default function Privacy() {
             <p className="text-muted-foreground">Email: <a href="mailto:feedback@upcraft.xyz" className="text-accent hover:underline">feedback@upcraft.xyz</a></p>
           </div>
         </section>
-      </motion.div>
+      </div>
     </div>
   );
 }
