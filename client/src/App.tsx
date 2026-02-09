@@ -10,8 +10,8 @@ import Privacy from "@/pages/privacy";
 function Router() {
   return (
     <Switch>
-      <Route path="/" component={Home} />
       <Route path="/apps/privacy" component={Privacy} />
+      <Route path="/" component={Home} />
       <Route component={NotFound} />
     </Switch>
   );
