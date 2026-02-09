@@ -11,6 +11,7 @@ function Router() {
   return (
     <Switch>
       <Route path="/apps/privacy" component={Privacy} />
+      <Route path="/app/privacy" component={Privacy} />
       <Route path="/" component={Home} />
       <Route component={NotFound} />
     </Switch>
