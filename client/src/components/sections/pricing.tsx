@@ -51,7 +51,7 @@ export default function Pricing() {
             viewport={{ once: true }}
             className="inline-block text-black text-xs font-bold uppercase tracking-widest mb-8 bg-transparent"
           >
-            Pricing
+            Services
           </motion.span>
           
           <motion.h2 
