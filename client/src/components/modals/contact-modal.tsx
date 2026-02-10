@@ -229,7 +229,7 @@ ${q1Label}:
                     required 
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
-                    placeholder="jane@company.com"
+                    placeholder="adalovelace@mail.com"
                   />
                 </div>
               </div>
