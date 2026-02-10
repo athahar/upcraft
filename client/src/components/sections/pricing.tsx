@@ -21,9 +21,9 @@ const plans = [
     timeline: "4+ days",
     price: "Starting at $5,000",
     features: [
-      "UX audit focused on trust and clarity",
+      "UX audit focused on trust and clarity, with prioritized fixes",
       "Prompt and interaction improvements",
-      "Prioritized fixes you can ship this sprint"
+      "Redesigned screens ready for your dev team"
     ]
   },
   {
