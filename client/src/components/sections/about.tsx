@@ -10,7 +10,7 @@ const topics = [
   {
     icon: Sparkles,
     title: "Make it feel right",
-    description: "AI makes it easy to build fast — but speed often shows. Whether you're building an AI-powered product or you used AI to build it, rough edges erode trust. We review your experience and give you clear, shippable fixes that make it feel like someone cared."
+    description: "Whether you're building an AI product or you used AI to build it, rough edges erode trust. We give you clear, shippable fixes that make it feel like someone cared."
   },
   {
     icon: MessageSquareQuote,
