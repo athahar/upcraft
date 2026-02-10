@@ -49,7 +49,7 @@ export default function TrustedBy() {
       <div className="container mx-auto px-6">
         <p className="text-center text-xs font-bold text-black mb-8 uppercase tracking-widest">Trusted by founders who built at</p>
         
-        <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 md:gap-x-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-16 items-center justify-items-center max-w-5xl mx-auto">
           {brandLogos.map((brand, i) => (
             <motion.div 
               key={i}
@@ -57,7 +57,7 @@ export default function TrustedBy() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="flex items-center justify-center transition-all duration-300 opacity-60 hover:opacity-100 grayscale hover:grayscale-0"
+              className="flex items-center justify-center w-full transition-all duration-300 opacity-60 hover:opacity-100 grayscale hover:grayscale-0"
             >
               <img
                 src={brand.url}
