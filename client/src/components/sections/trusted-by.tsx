@@ -47,7 +47,7 @@ export default function TrustedBy() {
   return (
     <section className="py-12 border-y border-border bg-background/50 backdrop-blur-sm">
       <div className="container mx-auto px-4 sm:px-6">
-        <p className="text-center text-xs font-bold text-black mb-8 uppercase tracking-widest">Trusted by founders who built at</p>
+        <p className="text-center text-sm md:text-xs font-bold text-black mb-8 uppercase tracking-widest">Trusted by founders who built at</p>
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-16 items-center justify-items-center max-w-5xl mx-auto">
           {brandLogos.map((brand, i) => (

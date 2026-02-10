@@ -30,7 +30,7 @@ export default function About() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="inline-block text-black text-xs font-bold uppercase tracking-widest mb-8 bg-transparent"
+            className="inline-block text-black text-sm md:text-xs font-bold uppercase tracking-widest mb-8 bg-transparent"
           >
             The Approach
           </motion.span>
@@ -40,7 +40,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-3xl sm:text-5xl md:text-7xl font-display font-bold tracking-tighter mb-8 md:mb-16 text-foreground"
+            className="text-4xl md:text-7xl font-display font-bold tracking-tighter mb-8 md:mb-16 text-foreground"
           >
             Design for <span className="text-accent">adoption</span>,<br />not just launch
           </motion.h2>
@@ -50,7 +50,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-base sm:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+            className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
           >Earning trust, changing behavior, and driving real adoption takes understanding how people actually work, what they actually need, and what will actually fit into their lives.</motion.p>
         </div>
 
@@ -68,7 +68,7 @@ export default function About() {
                 <topic.icon className="w-6 h-6 text-accent" strokeWidth={1.5} />
               </div>
               <h3 className="text-2xl font-display font-bold mb-4 text-foreground">{topic.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">{topic.description}</p>
+              <p className="text-lg md:text-base text-muted-foreground leading-relaxed">{topic.description}</p>
             </motion.div>
           ))}
         </div>
