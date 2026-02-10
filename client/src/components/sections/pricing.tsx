@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
+import { useState } from "react";
+import ContactModal from "@/components/modals/contact-modal";
 
 const plans = [
   {
@@ -38,8 +40,21 @@ const plans = [
 ];
 
 export default function Pricing() {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedPlan, setSelectedPlan] = useState<string | null>(null);
+
+  const handlePlanClick = (planName: string) => {
+    setSelectedPlan(planName);
+    setModalOpen(true);
+  };
+
   return (
     <section id="pricing" className="py-20 md:py-32 bg-background relative overflow-hidden">
+      <ContactModal 
+        isOpen={modalOpen} 
+        onClose={() => setModalOpen(false)} 
+        selectedTier={selectedPlan} 
+      />
       {/* Subtle grid background */}
       <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-5 mix-blend-overlay"></div>
       
@@ -108,12 +123,12 @@ export default function Pricing() {
               </div>
 
               <div className="mt-8 pt-8 border-t border-border/50">
-                <a 
-                  href="#contact" 
-                  className="w-full inline-flex items-center justify-center px-6 py-3 bg-foreground text-background rounded-full font-bold text-sm hover:bg-accent hover:text-accent-foreground transition-all duration-300"
+                <button 
+                  onClick={() => handlePlanClick(plan.name)}
+                  className="w-full inline-flex items-center justify-center px-6 py-3 bg-foreground text-background rounded-full font-bold text-sm hover:bg-accent hover:text-accent-foreground transition-all duration-300 cursor-pointer"
                 >
                   See if it's a fit
-                </a>
+                </button>
               </div>
             </motion.div>
           ))}
