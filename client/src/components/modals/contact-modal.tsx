@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Checkbox } from "@/components/ui/checkbox";
 import { motion, AnimatePresence } from "framer-motion";
-import { CheckCircle2, Loader2 } from "lucide-react";
+import { CheckCircle2, Loader2, Check } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 interface ContactModalProps {
   isOpen: boolean;
@@ -47,7 +47,6 @@ const QUESTIONS_BY_TIER: Record<string, {
 };
 
 export default function ContactModal({ isOpen, onClose, selectedTier }: ContactModalProps) {
-  const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -60,7 +59,6 @@ export default function ContactModal({ isOpen, onClose, selectedTier }: ContactM
   // Reset state when modal opens
   useEffect(() => {
     if (isOpen) {
-      setStep(1);
       setFormData({
         name: "",
         email: "",
@@ -137,34 +135,67 @@ export default function ContactModal({ isOpen, onClose, selectedTier }: ContactM
                 </p>
               </DialogHeader>
 
-              {/* Q1: Multi-choice */}
+              {/* Q1: Multi-choice Rectangular Cards */}
               {currentQ1 && (
                 <div className="space-y-4">
                   <Label className="text-base font-semibold">
                     1. {currentQ1.question} <span className="text-xs font-normal text-muted-foreground ml-1">(Select all that apply)</span>
                   </Label>
-                  <div className="space-y-3">
-                    {currentQ1.options.map((option) => (
-                      <div key={option} className="flex items-start space-x-3">
-                        <Checkbox 
-                          id={`q1-${option}`} 
-                          checked={formData.q1.includes(option)}
-                          onCheckedChange={() => handleQ1Change(option)}
-                          className="mt-1"
-                        />
-                        <Label 
-                          htmlFor={`q1-${option}`} 
-                          className="text-sm font-normal cursor-pointer leading-snug"
+                  <div className="space-y-2">
+                    {currentQ1.options.map((option) => {
+                      const isSelected = formData.q1.includes(option);
+                      return (
+                        <div 
+                          key={option} 
+                          onClick={() => handleQ1Change(option)}
+                          className={cn(
+                            "flex items-center p-3 rounded-lg border-2 cursor-pointer transition-all duration-200",
+                            isSelected 
+                              ? "border-accent bg-accent/5" 
+                              : "border-border hover:border-accent/50 bg-card"
+                          )}
                         >
-                          {option}
-                        </Label>
-                      </div>
-                    ))}
+                          <div className={cn(
+                            "w-5 h-5 mr-3 rounded border flex items-center justify-center shrink-0 transition-colors",
+                            isSelected ? "bg-accent border-accent text-accent-foreground" : "border-muted-foreground/30"
+                          )}>
+                            {isSelected && <Check className="w-3.5 h-3.5" strokeWidth={3} />}
+                          </div>
+                          <span className={cn(
+                            "text-sm font-medium leading-snug",
+                            isSelected ? "text-foreground" : "text-muted-foreground"
+                          )}>
+                            {option}
+                          </span>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               )}
 
-              {/* Required Fields: Name & Email */}
+              {/* Q2: Single-choice */}
+              <div className="space-y-4">
+                <Label className="text-base font-semibold">
+                  2. When do you need this?
+                </Label>
+                <RadioGroup 
+                  value={formData.q2} 
+                  onValueChange={(val) => setFormData({...formData, q2: val})}
+                  className="space-y-3"
+                >
+                  {["ASAP", "Within a few weeks", "No rush, just exploring"].map((option) => (
+                    <div key={option} className="flex items-center space-x-3">
+                      <RadioGroupItem value={option} id={`q2-${option}`} />
+                      <Label htmlFor={`q2-${option}`} className="font-normal cursor-pointer">
+                        {option}
+                      </Label>
+                    </div>
+                  ))}
+                </RadioGroup>
+              </div>
+
+              {/* Required Fields: Name & Email - Moved after Q2 */}
               <div className="grid grid-cols-1 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="name" className="text-base font-semibold">Name <span className="text-destructive">*</span></Label>
@@ -187,27 +218,6 @@ export default function ContactModal({ isOpen, onClose, selectedTier }: ContactM
                     placeholder="jane@company.com"
                   />
                 </div>
-              </div>
-
-              {/* Q2: Single-choice */}
-              <div className="space-y-4">
-                <Label className="text-base font-semibold">
-                  2. When do you need this?
-                </Label>
-                <RadioGroup 
-                  value={formData.q2} 
-                  onValueChange={(val) => setFormData({...formData, q2: val})}
-                  className="space-y-3"
-                >
-                  {["ASAP", "Within a few weeks", "No rush, just exploring"].map((option) => (
-                    <div key={option} className="flex items-center space-x-3">
-                      <RadioGroupItem value={option} id={`q2-${option}`} />
-                      <Label htmlFor={`q2-${option}`} className="font-normal cursor-pointer">
-                        {option}
-                      </Label>
-                    </div>
-                  ))}
-                </RadioGroup>
               </div>
 
               <div className="pt-4">
