@@ -218,7 +218,7 @@ ${q1Label}:
                     required 
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
-                    placeholder="Jane Doe"
+                    placeholder="Ada Lovelace"
                   />
                 </div>
                 <div className="space-y-2">
