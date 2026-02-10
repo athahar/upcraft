@@ -91,7 +91,7 @@ export default function Pricing() {
               </div>
               
               <div className="mb-8 pb-8 border-b border-border/50">
-                <div className="text-xl font-display font-bold text-foreground mb-1">{plan.price}</div>
+                <div className="text-base text-foreground mb-1">{plan.price}</div>
                 <div className="text-sm font-medium text-accent uppercase tracking-wide">Timeline: {plan.timeline}</div>
               </div>
 
