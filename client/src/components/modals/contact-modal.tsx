@@ -18,7 +18,7 @@ const QUESTIONS_BY_TIER: Record<string, {
   question: string;
   options: string[];
 }> = {
-  "Idea → Something Real": {
+  "Idea → Product": {
     question: "What do you have today?",
     options: [
       "A rough idea in my head",

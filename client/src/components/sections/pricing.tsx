@@ -5,7 +5,7 @@ import ContactModal from "@/components/modals/contact-modal";
 
 const plans = [
   {
-    name: "Idea → Something Real",
+    name: "Idea → Product",
     description: "Turn your idea into something people can try.",
     timeline: "4+ days",
     price: "Starting at $3,000",
