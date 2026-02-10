@@ -155,7 +155,7 @@ ${q1Label}:
                   <Label className="text-base font-semibold">
                     1. {currentQ1.question} <span className="text-xs font-normal text-muted-foreground ml-1">(Select all that apply)</span>
                   </Label>
-                  <div className="space-y-2">
+                  <div className="space-y-1">
                     {currentQ1.options.map((option) => {
                       const isSelected = formData.q1.includes(option);
                       return (
@@ -163,7 +163,7 @@ ${q1Label}:
                           key={option} 
                           onClick={() => handleQ1Change(option)}
                           className={cn(
-                            "flex items-center p-3 rounded-lg cursor-pointer transition-all duration-200",
+                            "flex items-center px-3 py-2 rounded-lg cursor-pointer transition-all duration-200",
                             isSelected 
                               ? "bg-accent/5" 
                               : "hover:bg-accent/5"
