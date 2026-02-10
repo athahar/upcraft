@@ -10,7 +10,7 @@ export default function Navbar() {
         </Link>
         
         <div className="flex items-center gap-8">
-          <a href="#contact" className="text-sm font-bold bg-accent/10 text-accent border border-accent/20 px-5 py-2.5 rounded-full hover:bg-accent hover:text-accent-foreground transition-all duration-300">
+          <a href="#contact" className="text-base lg:text-sm font-bold bg-accent/10 text-accent border border-accent/20 px-5 py-2.5 rounded-full hover:bg-accent hover:text-accent-foreground transition-all duration-300">
             Get in touch
           </a>
         </div>

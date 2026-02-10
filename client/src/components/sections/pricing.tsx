@@ -64,7 +64,7 @@ export default function Pricing() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="inline-block text-black text-sm lg:text-xs font-bold uppercase tracking-widest mb-8 bg-transparent"
+            className="inline-block text-black text-base lg:text-xs font-bold uppercase tracking-widest mb-8 bg-transparent"
           >
             Services
           </motion.span>
@@ -102,7 +102,7 @@ export default function Pricing() {
             >
               <div className="mb-6">
                 <h3 className="text-2xl font-display font-bold mb-2 text-foreground">{plan.name}</h3>
-                <p className="text-muted-foreground text-base lg:text-sm leading-relaxed min-h-[40px]">{plan.description}</p>
+                <p className="text-muted-foreground text-base leading-relaxed min-h-[40px]">{plan.description}</p>
               </div>
               
               <div className="mb-8 pb-8 border-b border-border/50">
@@ -111,12 +111,12 @@ export default function Pricing() {
               </div>
 
               <div className="flex-grow">
-                <span className="text-sm lg:text-xs font-bold uppercase tracking-widest text-muted-foreground mb-4 block">Includes</span>
+                <span className="text-base lg:text-xs font-bold uppercase tracking-widest text-muted-foreground mb-4 block">Includes</span>
                 <ul className="space-y-4">
                   {plan.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start gap-3">
                       <Check className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground text-base lg:text-sm leading-relaxed">{feature}</span>
+                      <span className="text-muted-foreground text-base leading-relaxed">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -125,7 +125,7 @@ export default function Pricing() {
               <div className="mt-8 pt-8 border-t border-border/50">
                 <button 
                   onClick={() => handlePlanClick(plan.name)}
-                  className="w-full inline-flex items-center justify-center px-6 py-3 bg-foreground text-background rounded-full font-bold text-sm hover:bg-accent hover:text-accent-foreground transition-all duration-300 cursor-pointer"
+                  className="w-full inline-flex items-center justify-center px-6 py-3 bg-foreground text-background rounded-full font-bold text-base hover:bg-accent hover:text-accent-foreground transition-all duration-300 cursor-pointer"
                 >
                   See if it's a fit
                 </button>

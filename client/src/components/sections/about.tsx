@@ -30,7 +30,7 @@ export default function About() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="inline-block text-black text-sm lg:text-xs font-bold uppercase tracking-widest mb-8 bg-transparent"
+            className="inline-block text-black text-base lg:text-xs font-bold uppercase tracking-widest mb-8 bg-transparent"
           >
             The Approach
           </motion.span>

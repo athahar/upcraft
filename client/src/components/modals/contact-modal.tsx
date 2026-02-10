@@ -56,7 +56,6 @@ export default function ContactModal({ isOpen, onClose, selectedTier }: ContactM
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
-  // Reset state when modal opens
   useEffect(() => {
     if (isOpen) {
       setFormData({
@@ -131,10 +130,10 @@ export default function ContactModal({ isOpen, onClose, selectedTier }: ContactM
                 <CheckCircle2 className="w-8 h-8 text-accent" strokeWidth={1.5} />
               </div>
               <DialogTitle className="text-2xl font-display font-bold">Got it.</DialogTitle>
-              <p className="text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 We'll be in touch within 24 hours.
               </p>
-              <Button onClick={onClose} className="mt-6">
+              <Button onClick={onClose} className="mt-6 text-base">
                 Close
               </Button>
             </motion.div>
@@ -150,16 +149,15 @@ export default function ContactModal({ isOpen, onClose, selectedTier }: ContactM
                 <DialogTitle className="text-2xl font-display font-bold">
                   {selectedTier}
                 </DialogTitle>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   Tell us a bit about your project to see if it's a fit.
                 </p>
               </DialogHeader>
 
-              {/* Q1: Multi-choice Rectangular Cards */}
               {currentQ1 && (
                 <div className="space-y-4">
                   <Label className="text-base font-semibold">
-                    1. {currentQ1.question} <span className="text-xs font-normal text-muted-foreground ml-1">(Select all that apply)</span>
+                    1. {currentQ1.question} <span className="text-base font-normal text-muted-foreground ml-1">(Select all that apply)</span>
                   </Label>
                   <div className="space-y-1">
                     {currentQ1.options.map((option) => {
@@ -182,7 +180,7 @@ export default function ContactModal({ isOpen, onClose, selectedTier }: ContactM
                             {isSelected && <Check className="w-3.5 h-3.5" strokeWidth={3} />}
                           </div>
                           <span className={cn(
-                            "text-sm font-medium leading-snug",
+                            "text-base font-medium leading-snug",
                             isSelected ? "text-foreground" : "text-muted-foreground"
                           )}>
                             {option}
@@ -194,7 +192,6 @@ export default function ContactModal({ isOpen, onClose, selectedTier }: ContactM
                 </div>
               )}
 
-              {/* Q2: Single-choice */}
               <div className="space-y-4">
                 <Label className="text-base font-semibold">
                   2. When do you need this?
@@ -207,7 +204,7 @@ export default function ContactModal({ isOpen, onClose, selectedTier }: ContactM
                   {["ASAP", "Within a few weeks", "No rush, just exploring"].map((option) => (
                     <div key={option} className="flex items-center space-x-3 pl-3">
                       <RadioGroupItem value={option} id={`q2-${option}`} />
-                      <Label htmlFor={`q2-${option}`} className="font-normal cursor-pointer">
+                      <Label htmlFor={`q2-${option}`} className="text-base font-normal cursor-pointer">
                         {option}
                       </Label>
                     </div>
@@ -215,7 +212,6 @@ export default function ContactModal({ isOpen, onClose, selectedTier }: ContactM
                 </RadioGroup>
               </div>
 
-              {/* Required Fields: Name & Email - Moved after Q2 */}
               <div className="grid grid-cols-1 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="name" className="text-base font-semibold">Your Name <span className="text-destructive">*</span></Label>
@@ -225,6 +221,7 @@ export default function ContactModal({ isOpen, onClose, selectedTier }: ContactM
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
                     placeholder="Ada Lovelace"
+                    className="text-base"
                   />
                 </div>
                 <div className="space-y-2">
@@ -236,12 +233,13 @@ export default function ContactModal({ isOpen, onClose, selectedTier }: ContactM
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
                     placeholder="adalovelace@mail.com"
+                    className="text-base"
                   />
                 </div>
               </div>
 
               {errorMsg && (
-                <p className="text-sm text-destructive text-center">{errorMsg}</p>
+                <p className="text-base text-destructive text-center">{errorMsg}</p>
               )}
 
               <div className="pt-4">
