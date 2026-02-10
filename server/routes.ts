@@ -37,7 +37,7 @@ export async function registerRoutes(
 
       await client.emails.send({
         from: fromEmail,
-        to: "mashaal@upcraft.xyz",
+        to: "hello@upcraft.xyz",
         replyTo: email,
         subject: `Project Inquiry: ${tier} — ${name}`,
         html: htmlBody,

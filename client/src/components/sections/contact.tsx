@@ -38,8 +38,8 @@ export default function Contact() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 mt-8">
             <div className="text-center">
               <p className="text-base md:text-sm font-bold uppercase tracking-widest text-muted-foreground mb-2">Email</p>
-              <a href="mailto:mashaal@upcraft.xyz" className="text-2xl font-display text-foreground hover:text-accent transition-colors">
-                mashaal@upcraft.xyz
+              <a href="mailto:hello@upcraft.xyz" className="text-2xl font-display text-foreground hover:text-accent transition-colors">
+                hello@upcraft.xyz
               </a>
             </div>
             <div className="text-center">
