@@ -58,8 +58,8 @@ export default function Pricing() {
       {/* Subtle grid background */}
       <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-5 mix-blend-overlay"></div>
       
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-4xl mx-auto text-center mb-24">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="max-w-4xl mx-auto text-center mb-12 md:mb-24">
           <motion.span 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -74,7 +74,7 @@ export default function Pricing() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-5xl md:text-7xl font-display font-bold tracking-tighter mb-8 text-foreground"
+            className="text-3xl sm:text-5xl md:text-7xl font-display font-bold tracking-tighter mb-8 text-foreground"
           >
             Pick your <span className="text-accent">starting point</span>
           </motion.h2>
@@ -84,13 +84,13 @@ export default function Pricing() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto"
+            className="text-base sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto"
           >
             For founders and product teams who need to move fast and ship right.
           </motion.p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
           {plans.map((plan, i) => (
             <motion.div
               key={i}

@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto px-6 h-20 flex items-center justify-between">
-        <Link href="/" className="text-3xl font-display font-bold tracking-tight hover:text-primary transition-colors flex items-center gap-2">
+      <div className="container mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
+        <Link href="/" className="text-2xl sm:text-3xl font-display font-bold tracking-tight hover:text-primary transition-colors flex items-center gap-2">
           upcraft
         </Link>
         

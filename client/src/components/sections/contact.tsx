@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-20 md:py-32 bg-muted/30 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <motion.span 
             initial={{ opacity: 0 }}
@@ -20,7 +20,7 @@ export default function Contact() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-5xl md:text-7xl font-display font-bold tracking-tighter mb-6 text-foreground"
+            className="text-3xl sm:text-5xl md:text-7xl font-display font-bold tracking-tighter mb-6 text-foreground"
           >
             Let's build something<br /><span className="text-[#378c87]">remarkable.</span>
           </motion.h2>
@@ -30,7 +30,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-xl text-muted-foreground max-w-2xl mx-auto mb-16"
+            className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 md:mb-16"
           >
             We'd love to hear about your project, and explore how to help.
           </motion.p>
