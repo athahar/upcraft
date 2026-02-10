@@ -112,7 +112,7 @@ export default function Pricing() {
                   href="#contact" 
                   className="w-full inline-flex items-center justify-center px-6 py-3 bg-foreground text-background rounded-full font-bold text-sm hover:bg-accent hover:text-accent-foreground transition-all duration-300"
                 >
-                  Get started
+                  Start a chat
                 </a>
               </div>
             </motion.div>
