@@ -74,9 +74,6 @@ export default function ContactModal({ isOpen, onClose, selectedTier }: ContactM
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Mock API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
-
     // Construct mailto link
     const subject = encodeURIComponent(`Project Inquiry: ${selectedTier}`);
     const q1Label = selectedTier && QUESTIONS_BY_TIER[selectedTier] ? QUESTIONS_BY_TIER[selectedTier].question : "Question 1";
