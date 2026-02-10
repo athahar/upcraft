@@ -41,15 +41,6 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-12 mt-8 mx-0 md:mx-[104px]"
           >Shipping got easier. Adoption didn't. We help founders and product teams close that gap — through fast, focused engagements that move you forward in days, not months.</motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-            className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6"
-          >
-            <a href="#contact" className="px-8 py-4 bg-accent text-accent-foreground rounded-full font-bold text-lg hover:bg-accent/90 transition-all hover:shadow-[0_0_30px_-5px_var(--color-accent)]">Start a chat</a>
-          </motion.div>
         </div>
       </div>
       <motion.div 
