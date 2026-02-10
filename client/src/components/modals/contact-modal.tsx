@@ -77,7 +77,21 @@ export default function ContactModal({ isOpen, onClose, selectedTier }: ContactM
     // Mock API call
     await new Promise(resolve => setTimeout(resolve, 1500));
 
-    // In a real app, this would send to hello@upcraft.xyz
+    // Construct mailto link
+    const subject = encodeURIComponent(`Project Inquiry: ${selectedTier}`);
+    const q1Label = selectedTier && QUESTIONS_BY_TIER[selectedTier] ? QUESTIONS_BY_TIER[selectedTier].question : "Question 1";
+    const body = encodeURIComponent(`
+Name: ${formData.name}
+Email: ${formData.email}
+Timeline: ${formData.q2}
+
+${q1Label}:
+- ${formData.q1.join("\n- ")}
+`.trim());
+
+    window.location.href = `mailto:mashaal@upcraft.xyz?subject=${subject}&body=${body}`;
+
+    // In a real app, this would send to mashaal@upcraft.xyz
     console.log("Form submitted:", { tier: selectedTier, ...formData });
 
     setIsSubmitting(false);
