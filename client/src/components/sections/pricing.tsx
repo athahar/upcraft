@@ -33,7 +33,7 @@ const plans = [
     price: "Starting at $4,000",
     features: [
       "Sharp problem/value story",
-      "Structured pitch deck or vision highlight",
+      "Structured pitch deck, or vision highlight video",
       "Visual and messaging direction"
     ]
   }
