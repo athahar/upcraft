@@ -86,7 +86,14 @@ ${q1Label}:
 - ${formData.q1.join("\n- ")}
 `.trim());
 
-    window.location.href = `mailto:mashaal@upcraft.xyz?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:mashaal@upcraft.xyz?subject=${subject}&body=${body}`;
+    
+    // Use a temporary link and click it to ensure it works better in some browser environments
+    const link = document.createElement('a');
+    link.href = mailtoLink;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 
     // In a real app, this would send to mashaal@upcraft.xyz
     console.log("Form submitted:", { tier: selectedTier, ...formData });
@@ -124,6 +131,9 @@ ${q1Label}:
               <DialogTitle className="text-2xl font-display font-bold">Got it.</DialogTitle>
               <p className="text-muted-foreground">
                 We'll be in touch within 24 hours.
+              </p>
+              <p className="text-xs text-muted-foreground/70 mt-2">
+                (If your email client didn't open, please email us directly at mashaal@upcraft.xyz)
               </p>
               <Button onClick={onClose} className="mt-6">
                 Close
