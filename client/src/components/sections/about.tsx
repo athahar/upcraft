@@ -1,21 +1,21 @@
 import { motion } from "framer-motion";
-import { HelpCircle, Target, FlaskConical } from "lucide-react";
+import { Compass, Sparkles, MessageSquareQuote } from "lucide-react";
 
 const topics = [
   {
-    icon: HelpCircle,
-    title: "Question what you think you know",
-    description: "We help you pressure-test assumptions, and hear what people are not saying, and uncover real context."
+    icon: Compass,
+    title: "Know what to build",
+    description: "Great products start with clarity, not assumptions. We help you pressure-test your idea, understand your users, and turn ambiguity into a prototype people can react to."
   },
   {
-    icon: Target,
-    title: "Find the problem worth solving",
-    description: "We help you dig deep — past the feature ask to the underlying customer need, to the actual job-to-be-done."
+    icon: Sparkles,
+    title: "Make it feel right",
+    description: "AI makes it easy to build fast — but speed often shows. Whether you're building an AI-powered product or you used AI to build it, rough edges erode trust. We review your experience and give you clear, shippable fixes that make it feel like someone cared."
   },
   {
-    icon: FlaskConical,
-    title: "Build what matters, not just what's easy",
-    description: "Most MVPs chase speed. We focus on building something people will use, in the leanest way possible."
+    icon: MessageSquareQuote,
+    title: "Make people believe it",
+    description: "A great product with a weak story doesn't get funded, sold, or adopted. We help you find the narrative that makes the right people say yes."
   }
 ];
 
