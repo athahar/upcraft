@@ -49,7 +49,7 @@ export default function Pricing() {
   };
 
   return (
-    <section id="pricing" className="py-20 md:py-32 bg-background relative overflow-hidden">
+    <section id="pricing" className="py-20 lg:py-32 bg-background relative overflow-hidden">
       <ContactModal 
         isOpen={modalOpen} 
         onClose={() => setModalOpen(false)} 
@@ -58,13 +58,13 @@ export default function Pricing() {
       {/* Subtle grid background */}
       <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-5 mix-blend-overlay"></div>
       
-      <div className="container mx-auto px-4 sm:px-6 relative z-10">
-        <div className="max-w-4xl mx-auto text-center mb-12 md:mb-24">
+      <div className="container mx-auto px-4 lg:px-6 relative z-10">
+        <div className="max-w-4xl mx-auto text-center mb-12 lg:mb-24">
           <motion.span 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="inline-block text-black text-sm md:text-xs font-bold uppercase tracking-widest mb-8 bg-transparent"
+            className="inline-block text-black text-sm lg:text-xs font-bold uppercase tracking-widest mb-8 bg-transparent"
           >
             Services
           </motion.span>
@@ -74,7 +74,7 @@ export default function Pricing() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-4xl md:text-7xl font-display font-bold tracking-tighter mb-8 text-foreground"
+            className="text-4xl lg:text-7xl font-display font-bold tracking-tighter mb-8 text-foreground"
           >
             Pick your <span className="text-accent">starting point</span>
           </motion.h2>
@@ -84,13 +84,13 @@ export default function Pricing() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto"
+            className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto"
           >
             For founders and product teams who need to move fast and ship right.
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
           {plans.map((plan, i) => (
             <motion.div
               key={i}
@@ -102,21 +102,21 @@ export default function Pricing() {
             >
               <div className="mb-6">
                 <h3 className="text-2xl font-display font-bold mb-2 text-foreground">{plan.name}</h3>
-                <p className="text-muted-foreground text-base md:text-sm leading-relaxed min-h-[40px]">{plan.description}</p>
+                <p className="text-muted-foreground text-base lg:text-sm leading-relaxed min-h-[40px]">{plan.description}</p>
               </div>
               
               <div className="mb-8 pb-8 border-b border-border/50">
-                <div className="text-lg md:text-base text-foreground mb-1">{plan.price}</div>
-                <div className="text-base md:text-sm font-medium text-accent uppercase tracking-wide">Timeline: {plan.timeline}</div>
+                <div className="text-lg lg:text-base text-foreground mb-1">{plan.price}</div>
+                <div className="text-base lg:text-sm font-medium text-accent uppercase tracking-wide">Timeline: {plan.timeline}</div>
               </div>
 
               <div className="flex-grow">
-                <span className="text-sm md:text-xs font-bold uppercase tracking-widest text-muted-foreground mb-4 block">Includes</span>
+                <span className="text-sm lg:text-xs font-bold uppercase tracking-widest text-muted-foreground mb-4 block">Includes</span>
                 <ul className="space-y-4">
                   {plan.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start gap-3">
                       <Check className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground text-base md:text-sm leading-relaxed">{feature}</span>
+                      <span className="text-muted-foreground text-base lg:text-sm leading-relaxed">{feature}</span>
                     </li>
                   ))}
                 </ul>

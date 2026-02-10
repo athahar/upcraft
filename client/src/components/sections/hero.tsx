@@ -15,13 +15,13 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent" />
       </div>
-      <div className="container mx-auto px-4 sm:px-6 relative z-10 text-center">
+      <div className="container mx-auto px-4 lg:px-6 relative z-10 text-center">
         <div className="max-w-5xl mx-auto">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="mb-8 inline-flex items-center justify-center text-black text-sm md:text-xs font-bold uppercase tracking-widest bg-transparent"
+            className="mb-8 inline-flex items-center justify-center text-black text-sm lg:text-xs font-bold uppercase tracking-widest bg-transparent"
           >
             Strategic Product & UX Design
           </motion.div>
@@ -30,7 +30,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-            className="text-5xl md:text-8xl font-display font-bold leading-[1.1] tracking-tight mb-10 text-foreground"
+            className="text-5xl lg:text-8xl font-display font-bold leading-[1.1] tracking-tight mb-10 text-foreground"
           >
             Build what's worth building
           </motion.h1>
@@ -39,7 +39,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-12 mt-8 px-0 md:px-[104px]"
+            className="text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-12 mt-8 px-0 lg:px-[104px]"
           >Shipping got easier. Adoption didn't. We help founders and product teams close that gap — through fast, focused engagements that move you forward in days, not months.</motion.p>
         </div>
       </div>

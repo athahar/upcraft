@@ -21,16 +21,16 @@ const topics = [
 
 export default function About() {
   return (
-    <section id="about" className="py-20 md:py-32 bg-background relative overflow-hidden">
+    <section id="about" className="py-20 lg:py-32 bg-background relative overflow-hidden">
       {/* Subtle grid background */}
       <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-5 mix-blend-overlay"></div>
-      <div className="container mx-auto px-4 sm:px-6 relative z-10">
-        <div className="max-w-4xl mx-auto text-center mb-16 md:mb-24">
+      <div className="container mx-auto px-4 lg:px-6 relative z-10">
+        <div className="max-w-4xl mx-auto text-center mb-16 lg:mb-24">
           <motion.span 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="inline-block text-black text-sm md:text-xs font-bold uppercase tracking-widest mb-8 bg-transparent"
+            className="inline-block text-black text-sm lg:text-xs font-bold uppercase tracking-widest mb-8 bg-transparent"
           >
             The Approach
           </motion.span>
@@ -40,7 +40,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-4xl md:text-7xl font-display font-bold tracking-tighter mb-8 md:mb-16 text-foreground"
+            className="text-4xl lg:text-7xl font-display font-bold tracking-tighter mb-8 lg:mb-16 text-foreground"
           >
             Design for <span className="text-accent">adoption</span>,<br />not just launch
           </motion.h2>
@@ -50,11 +50,11 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+            className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
           >Earning trust, changing behavior, and driving real adoption takes understanding how people actually work, what they actually need, and what will actually fit into their lives.</motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-12 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12 max-w-6xl mx-auto">
           {topics.map((topic, i) => (
             <motion.div
               key={i}
@@ -68,7 +68,7 @@ export default function About() {
                 <topic.icon className="w-6 h-6 text-accent" strokeWidth={1.5} />
               </div>
               <h3 className="text-2xl font-display font-bold mb-4 text-foreground">{topic.title}</h3>
-              <p className="text-lg md:text-base text-muted-foreground leading-relaxed">{topic.description}</p>
+              <p className="text-lg lg:text-base text-muted-foreground leading-relaxed">{topic.description}</p>
             </motion.div>
           ))}
         </div>
