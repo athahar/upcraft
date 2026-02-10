@@ -39,7 +39,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-12 mt-8 px-0 lg:px-[104px]"
+            className="text-xl lg:text-2xl text-muted-foreground leading-relaxed mb-12 mt-8"
           >Shipping got easier. Adoption didn't. We help founders and product teams close that gap — through fast, focused engagements that move you forward in days, not months.</motion.p>
         </div>
       </div>
