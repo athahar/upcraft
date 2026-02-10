@@ -61,7 +61,7 @@ export default function Pricing() {
             transition={{ duration: 0.6 }}
             className="text-5xl md:text-7xl font-display font-bold tracking-tighter mb-8 text-foreground"
           >
-            Simple, transparent <span className="text-accent">pricing</span>.
+            Pick your <span className="text-accent">starting point</span>.
           </motion.h2>
           
           <motion.p 
