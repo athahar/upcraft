@@ -199,7 +199,7 @@ ${q1Label}:
                   className="space-y-3 pt-2.5"
                 >
                   {["ASAP", "Within a few weeks", "No rush, just exploring"].map((option) => (
-                    <div key={option} className="flex items-center space-x-3">
+                    <div key={option} className="flex items-center space-x-3 pl-3">
                       <RadioGroupItem value={option} id={`q2-${option}`} />
                       <Label htmlFor={`q2-${option}`} className="font-normal cursor-pointer">
                         {option}
