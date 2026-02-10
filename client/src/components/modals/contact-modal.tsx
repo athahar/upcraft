@@ -163,10 +163,10 @@ ${q1Label}:
                           key={option} 
                           onClick={() => handleQ1Change(option)}
                           className={cn(
-                            "flex items-center p-3 rounded-lg border-2 cursor-pointer transition-all duration-200",
+                            "flex items-center p-3 rounded-lg cursor-pointer transition-all duration-200",
                             isSelected 
-                              ? "border-accent bg-accent/5" 
-                              : "border-border hover:border-accent/50 bg-card"
+                              ? "bg-accent/5" 
+                              : "hover:bg-accent/5"
                           )}
                         >
                           <div className={cn(
@@ -196,7 +196,7 @@ ${q1Label}:
                 <RadioGroup 
                   value={formData.q2} 
                   onValueChange={(val) => setFormData({...formData, q2: val})}
-                  className="space-y-3"
+                  className="space-y-3 pt-2.5"
                 >
                   {["ASAP", "Within a few weeks", "No rush, just exploring"].map((option) => (
                     <div key={option} className="flex items-center space-x-3">
@@ -212,7 +212,7 @@ ${q1Label}:
               {/* Required Fields: Name & Email - Moved after Q2 */}
               <div className="grid grid-cols-1 gap-4">
                 <div className="space-y-2">
-                  <Label htmlFor="name" className="text-base font-semibold">Name <span className="text-destructive">*</span></Label>
+                  <Label htmlFor="name" className="text-base font-semibold">Your Name <span className="text-destructive">*</span></Label>
                   <Input 
                     id="name" 
                     required 
@@ -222,7 +222,7 @@ ${q1Label}:
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="email" className="text-base font-semibold">Email <span className="text-destructive">*</span></Label>
+                  <Label htmlFor="email" className="text-base font-semibold">How do we reach you? <span className="text-destructive">*</span></Label>
                   <Input 
                     id="email" 
                     type="email" 
