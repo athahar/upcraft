@@ -67,39 +67,41 @@ export default function ContactModal({ isOpen, onClose, selectedTier }: ContactM
       });
       setIsSuccess(false);
       setIsSubmitting(false);
+      setErrorMsg(null);
     }
   }, [isOpen]);
+
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setErrorMsg(null);
 
-    // Construct mailto link
-    const subject = encodeURIComponent(`Project Inquiry: ${selectedTier}`);
-    const q1Label = selectedTier && QUESTIONS_BY_TIER[selectedTier] ? QUESTIONS_BY_TIER[selectedTier].question : "Question 1";
-    const body = encodeURIComponent(`
-Name: ${formData.name}
-Email: ${formData.email}
-Timeline: ${formData.q2}
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          tier: selectedTier,
+          q1: formData.q1,
+          q2: formData.q2,
+        }),
+      });
 
-${q1Label}:
-- ${formData.q1.join("\n- ")}
-`.trim());
+      if (!response.ok) {
+        const data = await response.json();
+        throw new Error(data.error || "Something went wrong");
+      }
 
-    const mailtoLink = `mailto:mashaal@upcraft.xyz?subject=${subject}&body=${body}`;
-    
-    // Use a temporary link and click it to ensure it works better in some browser environments
-    const link = document.createElement('a');
-    link.href = mailtoLink;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-
-    // In a real app, this would send to mashaal@upcraft.xyz
-    console.log("Form submitted:", { tier: selectedTier, ...formData });
-
-    setIsSubmitting(false);
-    setIsSuccess(true);
+      setIsSuccess(true);
+    } catch (err: any) {
+      setErrorMsg(err.message || "Failed to send. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleQ1Change = (option: string) => {
@@ -131,9 +133,6 @@ ${q1Label}:
               <DialogTitle className="text-2xl font-display font-bold">Got it.</DialogTitle>
               <p className="text-muted-foreground">
                 We'll be in touch within 24 hours.
-              </p>
-              <p className="text-xs text-muted-foreground/70 mt-2">
-                (If your email client didn't open, please email us directly at mashaal@upcraft.xyz)
               </p>
               <Button onClick={onClose} className="mt-6">
                 Close
@@ -240,6 +239,10 @@ ${q1Label}:
                   />
                 </div>
               </div>
+
+              {errorMsg && (
+                <p className="text-sm text-destructive text-center">{errorMsg}</p>
+              )}
 
               <div className="pt-4">
                 <Button 
