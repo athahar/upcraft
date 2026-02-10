@@ -26,7 +26,7 @@ const QUESTIONS_BY_TIER: Record<string, {
       "Existing research or user interviews"
     ]
   },
-  "AI Product Polish": {
+  "AI Product Reshape": {
     question: "What do you have today?",
     options: [
       "A live product with real users",
