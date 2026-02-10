@@ -2,6 +2,7 @@ import Navbar from "@/components/layout/navbar";
 import Hero from "@/components/sections/hero";
 import TrustedBy from "@/components/sections/trusted-by";
 import About from "@/components/sections/about";
+import Pricing from "@/components/sections/pricing";
 import Contact from "@/components/sections/contact";
 import Footer from "@/components/layout/footer";
 
@@ -13,6 +14,7 @@ export default function Home() {
         <Hero />
         <TrustedBy />
         <About />
+        <Pricing />
         <Contact />
       </main>
       
