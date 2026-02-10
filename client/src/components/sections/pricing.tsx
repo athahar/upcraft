@@ -16,7 +16,7 @@ const plans = [
     ]
   },
   {
-    name: "AI Product Reshape",
+    name: "AI Product Polish",
     description: "Make your AI experience feel finished, not experimental.",
     timeline: "4+ days",
     price: "Starting at $5,000",
