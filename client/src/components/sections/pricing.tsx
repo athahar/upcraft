@@ -5,7 +5,7 @@ const plans = [
   {
     name: "Idea → Prototype",
     description: "Turn your idea into something people can try.",
-    timeline: "~1 week",
+    timeline: "4+ days",
     price: "Starting at $3,000",
     features: [
       "Clear user flows and core screens",
@@ -16,7 +16,7 @@ const plans = [
   {
     name: "AI Product Polish",
     description: "Make your AI experience feel finished, not experimental.",
-    timeline: "~1 week",
+    timeline: "4+ days",
     price: "Starting at $5,000",
     features: [
       "UX audit focused on trust and clarity",
@@ -27,7 +27,7 @@ const plans = [
   {
     name: "Pitch & Narrative",
     description: "Help the right people say yes.",
-    timeline: "1–2 weeks",
+    timeline: "4+ days",
     price: "Starting at $4,000",
     features: [
       "Sharp problem/value story",
@@ -105,6 +105,15 @@ export default function Pricing() {
                     </li>
                   ))}
                 </ul>
+              </div>
+
+              <div className="mt-8 pt-8 border-t border-border/50">
+                <a 
+                  href="#contact" 
+                  className="w-full inline-flex items-center justify-center px-6 py-3 bg-foreground text-background rounded-full font-bold text-sm hover:bg-accent hover:text-accent-foreground transition-all duration-300"
+                >
+                  Get started
+                </a>
               </div>
             </motion.div>
           ))}
