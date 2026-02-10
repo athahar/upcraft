@@ -32,7 +32,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
             className="text-5xl md:text-8xl font-display font-bold leading-[1.1] tracking-tight mb-10 text-foreground"
           >
-            Shipping got easier.<br />Adoption didn't.
+            Build what's worth building.
           </motion.h1>
           
           <motion.p 
@@ -40,7 +40,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-12 mt-8 mx-0 md:mx-[104px]"
-          >We help founders and product teams close that gap — through fast, focused engagements that move you forward in days, not months.</motion.p>
+          >Shipping got easier. Adoption didn't. We help founders and product teams close that gap — through fast, focused engagements that move you forward in days, not months.</motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
