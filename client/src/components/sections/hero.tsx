@@ -32,7 +32,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
             className="text-5xl md:text-8xl font-display font-bold leading-[1.1] tracking-tight mb-10 text-foreground"
           >
-            Build what's worth building.
+            Shipping got easier.<br />Adoption didn't.
           </motion.h1>
           
           <motion.p 
@@ -40,7 +40,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-12 mt-8 mx-0 md:mx-[104px]"
-          >Tools got better. Building got faster. But building what's actually worth building is still hard. It requires getting out of assumptions and into the reality of the people you're building for. For 15 years, we've helped teams do exactly that.</motion.p>
+          >We help founders and product teams close that gap — through fast, focused engagements that move you forward in days, not months.</motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
