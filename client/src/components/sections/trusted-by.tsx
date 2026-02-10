@@ -25,6 +25,21 @@ const brandLogos = [
     name: "Square", 
     url: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Square%2C_Inc._logo.svg",
     className: "h-6 md:h-8" 
+  },
+  {
+    name: "Apple",
+    url: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+    className: "h-6 md:h-8"
+  },
+  {
+    name: "Microsoft",
+    url: "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg",
+    className: "h-6 md:h-8"
+  },
+  {
+    name: "Amazon",
+    url: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+    className: "h-6 md:h-8"
   }
 ];
 
