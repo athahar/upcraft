@@ -35,13 +35,18 @@ export async function registerRoutes(
         </ul>
       `;
 
-      await client.emails.send({
+      const { data, error: sendError } = await client.emails.send({
         from: fromEmail,
         to: "hello@upcraft.xyz",
         replyTo: email,
         subject: `Project Inquiry: ${tier} — ${name}`,
         html: htmlBody,
       });
+
+      if (sendError) {
+        console.error("Resend API error:", sendError);
+        return res.status(500).json({ error: "Failed to send email. Please try again." });
+      }
 
       return res.json({ success: true });
     } catch (error: any) {
