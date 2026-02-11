@@ -10,9 +10,9 @@ const plans = [
     timeline: "4+ days",
     price: "Starting at $3,000",
     features: [
-      "Clear user flows and core screens",
-      "Clickable prototype (no code)",
-      "Design assets ready for your dev team"
+      "Just enough research to confirm you're solving the right problem",
+      "Core screens and user flows",
+      "Clickable prototype (no code) and assets ready for your dev team"
     ]
   },
   {
