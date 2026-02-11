@@ -35,6 +35,9 @@ export async function registerRoutes(
         </ul>
       `;
 
+      const apiKeyPrefix = process.env.RESEND_API_KEY?.substring(0, 12);
+      console.log("Sending email with:", { from: fromEmail, to: "hello@upcraft.xyz", apiKeyPrefix });
+
       const { data, error: sendError } = await client.emails.send({
         from: fromEmail,
         to: "hello@upcraft.xyz",
@@ -45,7 +48,7 @@ export async function registerRoutes(
 
       if (sendError) {
         console.error("Resend API error:", sendError);
-        return res.status(500).json({ error: "Failed to send email. Please try again." });
+        return res.status(500).json({ error: sendError.message });
       }
 
       return res.json({ success: true });
