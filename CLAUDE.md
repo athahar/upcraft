@@ -21,7 +21,7 @@ Consulting business marketing site — strategy & UX design.
 ```
 client/src/
   components/layout/    # navbar, footer
-  components/sections/  # hero, about, pricing, contact, trusted-by
+  components/sections/  # hero, about, contact, trusted-by
   components/modals/    # contact-modal (multi-step form)
   components/ui/        # shadcn/ui primitives
   pages/                # home, privacy, not-found

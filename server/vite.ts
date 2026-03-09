@@ -49,7 +49,13 @@ export async function setupVite(server: Server, app: Express) {
         `src="/src/main.tsx?v=${nanoid()}"`,
       );
       const page = await vite.transformIndexHtml(url, template);
-      res.status(200).set({ "Content-Type": "text/html" }).end(page);
+      const headers: Record<string, string> = { "Content-Type": "text/html" };
+      if (process.env.NODE_ENV === "development") {
+        headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0";
+        headers["Pragma"] = "no-cache";
+        headers["Expires"] = "0";
+      }
+      res.status(200).set(headers).end(page);
     } catch (e) {
       vite.ssrFixStacktrace(e as Error);
       next(e);
