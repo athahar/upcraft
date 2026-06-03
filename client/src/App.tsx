@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
 import Privacy from "@/pages/privacy";
+import MobHog from "@/pages/mobhog";
 
 function Router() {
   return (
@@ -13,6 +14,7 @@ function Router() {
       <Route path="/apps/privacy" component={Privacy} />
       <Route path="/apps/prvicay" component={Privacy} />
       <Route path="/app/privacy" component={Privacy} />
+      <Route path="/app/mobhog" component={MobHog} />
       <Route path="/" component={Home} />
       <Route component={NotFound} />
     </Switch>
