@@ -52,12 +52,13 @@ export default function MobHogPrivacy() {
               Apple In-App Purchase subscriptions. Both flows are detailed in section 3.
             </p>
             <p className="mb-4 leading-relaxed text-muted-foreground">
-              This marketing site (mobhog.app) uses PostHog for cookie-free analytics so we can see how
-              people discover mobHog. We do not collect email addresses, names, or anything personally
-              identifying on this site.
+              This marketing site (upcraft.xyz/app/mobhog) uses PostHog for cookie-free analytics so we
+              can see how people discover mobHog. We do not collect email addresses, names, or anything
+              personally identifying on this site.
             </p>
             <p className="mb-4 leading-relaxed text-muted-foreground">
-              This policy applies to both the mobHog iOS app and the mobhog.app marketing site.
+              This policy applies to both the mobHog iOS app and the upcraft.xyz/app/mobhog marketing
+              site.
             </p>
           </section>
 
@@ -284,15 +285,15 @@ export default function MobHogPrivacy() {
               </li>
             </ul>
             <p className="mb-4 leading-relaxed text-muted-foreground">
-              The marketing site itself uses PostHog as described in section 2 and is hosted on Vercel,
+              The marketing site itself uses PostHog as described in section 2 and is hosted on Railway,
               which receives standard server logs (IP, request path) per{" "}
               <a
-                href="https://vercel.com/legal/privacy-policy"
+                href="https://railway.com/legal/privacy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-accent hover:underline"
               >
-                Vercel's policy
+                Railway's policy
               </a>
               .
             </p>
