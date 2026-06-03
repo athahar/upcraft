@@ -233,7 +233,7 @@ export default function MobHog() {
             <p className="mt-8 text-sm text-muted-foreground">
               mobHog is an independent third-party app and is not affiliated with, endorsed by, or
               sponsored by PostHog Inc.{" "}
-              <Link href="/app/privacy" className="text-accent hover:underline">
+              <Link href="/app/mobhog/privacy-policy" className="text-accent hover:underline">
                 Privacy Policy
               </Link>
             </p>
