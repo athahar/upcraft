@@ -8,6 +8,9 @@ import Home from "@/pages/home";
 import Privacy from "@/pages/privacy";
 import MobHog from "@/pages/mobhog";
 import MobHogPrivacy from "@/pages/mobhog-privacy";
+import WaddlePlay from "@/pages/waddleplay";
+import KidsCharades from "@/pages/kids-charades";
+import KidsCharadesPrivacy from "@/pages/kids-charades-privacy";
 
 function Router() {
   return (
@@ -17,6 +20,9 @@ function Router() {
       <Route path="/app/privacy" component={Privacy} />
       <Route path="/app/mobhog" component={MobHog} />
       <Route path="/app/mobhog/privacy-policy" component={MobHogPrivacy} />
+      <Route path="/app/waddleplay" component={WaddlePlay} />
+      <Route path="/app/kids-charades" component={KidsCharades} />
+      <Route path="/app/kids-charades/privacy-policy" component={KidsCharadesPrivacy} />
       <Route path="/" component={Home} />
       <Route component={NotFound} />
     </Switch>
